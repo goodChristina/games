@@ -24,6 +24,6 @@ for Mac
 
 for Windows
 ```
-python3 games_3x3.py
-python games_3x3.py
+python3 tic_tac_toe.py
+python tic_tac_toe.py
 ```

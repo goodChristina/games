@@ -5,9 +5,7 @@ Took a basic version of tic-tac-toe from The Perfect Crabs Intro's replit and th
     
     Colors, user names, fonts, check for draws, typewriter font, 
     instructions, time, check if space was taken and a clear function.
-
--
-C. Rin - 
+C.Rin, April 2024
 """
 
 import requests as r

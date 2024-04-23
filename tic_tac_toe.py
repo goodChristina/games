@@ -80,7 +80,7 @@ def make_move(board, row, column, player):
     return board
 
 
-# instruction move
+# instructions for move
 typewriter("\nAfter a move:\n\n")
 print(print_board(make_move(starter_board, 0, 0, "X")))
 time.sleep(3)

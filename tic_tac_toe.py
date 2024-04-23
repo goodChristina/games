@@ -84,8 +84,7 @@ def make_move(board, row, column, player):
 typewriter("\nAfter a move:\n\n")
 print(print_board(make_move(starter_board, 0, 0, "X")))
 time.sleep(3)
-os.system("cls")
-os.system("clear")
+cleaner()
 # check if the game is over:
 
 # get players

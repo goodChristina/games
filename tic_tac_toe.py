@@ -1,10 +1,11 @@
 """
 Tic-Tac-Toe
 
-Took a basic version of tic-tac-toe from The Perfect Crabs Intro's replit and then added these features:
+Took a basic version of tic-tac-toe (The Perfect Crabs Intro's replit) and then added these features:
     
     Colors, user names, fonts, check for draws, typewriter font, 
     instructions, time, check if space was taken and a clear function.
+    
 C.Rin, April 2024
 """
 

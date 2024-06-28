@@ -1,0 +1,25 @@
+""" Encrypt Caesar Cipher
+Right or left shift to a letter 
+ORD() converts letter to ASCII, and CHR() does the opposite
+
+from Functional Programming, Udemy
+"""
+
+from typing import List
+
+
+def encrypt(word: str, shift: int) -> List[int]:
+    return [ord(char) + shift for char in word]
+
+
+def decrypt(encrypted: List[int], shift: int) -> str:
+    return "".join([chr(num - shift) for num in encrypted])
+
+
+secret_words = ["christina", "is", "awesome"]
+
+encrypted = [encrypt(plaintext, 3) for plaintext in secret_words]
+decrypted = [decrypt(code, 3) for code in encrypted]
+
+print(encrypted)
+print(decrypted)

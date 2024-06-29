@@ -2,7 +2,8 @@
 Right or left shift to a letter 
 ORD() converts letter to ASCII, and CHR() does the opposite
 
-from Functional Programming, Udemy
+encrypt and decrypt functions from Functional Programming, Udemy
+- C. Rin
 """
 
 from typing import List

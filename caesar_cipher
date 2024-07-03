@@ -1,8 +1,6 @@
 """ Encrypt Caesar Cipher
 Right or left shift to a letter 
 ORD() converts letter to ASCII, and CHR() does the opposite
-
-encrypt and decrypt functions from Functional Programming, Udemy
 - C. Rin
 """
 

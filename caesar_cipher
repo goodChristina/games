@@ -17,10 +17,50 @@ def decrypt(encrypted: List[int], shift: int) -> str:
     return "".join([chr(num - shift) for num in encrypted])
 
 
-secret_words = ["christina", "is", "awesome"]
+user_one_word = input(
+    "\nLet's play a game!\nHide your answers, okay?\nEnter your secret word: "
+).capitalize()
+print(f"You have entered '{user_one_word}.'")
 
-encrypted = [encrypt(plaintext, 3) for plaintext in secret_words]
-decrypted = [decrypt(code, 3) for code in encrypted]
+while True:
+    try:
+        user_one_num = int(input("Enter a number between 1 and 25: "))
+        if 1 <= user_one_num <= 25:
+            break
+        else:
+            print(f"{user_one_num} is not a number between 1 and 25")
+    except:
+        user_stop = input("Do you want to end? Y or N? ").capitalize()
+        if user_stop == "Y" or user_stop == "YES":
+            exit()
+        else:
+            continue
 
-print(encrypted)
-print(decrypted)
+
+print(f"You have entered number: {user_one_num}")
+sec_word = encrypt(user_one_word, user_one_num)
+print(f"This is your word encrypted! {sec_word}")
+
+guesses = 3
+print(
+    "\nReady Player Two!\nGuess a number between 1 and 25 to decrypt the secret word."
+)
+while guesses > 0:
+    print(f"\nYou have {guesses} guesses left!")
+    try:
+        user_two_num = int(input("\nSecret number guess: "))
+        guesses -= 1
+        print(user_two_num)
+        user_two_guess = decrypt(sec_word, user_two_num)
+        print(user_two_guess)
+        if user_two_num == user_one_num:
+            print("You have guessed correctly!")
+            break
+        elif user_one_num > user_two_num:
+            print("Try a bigger number!")
+        elif user_one_num < user_two_num:
+            print("Try a smaller number!")
+    except:
+        print("Oops!")
+
+print("Thanks for playing!")

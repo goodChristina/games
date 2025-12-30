@@ -9,10 +9,6 @@ Caesar Cipher is a simple encryption that uses ASCII values to move letters
 - **Draw Detection:** The game checks for draws when the board is fully filled without any player achieving victory. There are also checks if a space is already taken. 
 - **Winner Announcement:** When a player achieves victory, the game announces the winner.
 
-## ${\color{blue}Features:}$  (Caesar Cipher)
-- **2+ Players:** This is the base code. You can use it to send secret messages. I haven't added into a player mode with user input...YET!
-
-
 ## ${\color{blue}Play}$  (Tic-Tac-Toe)
 1. **Setup:** Choose two players and enter their names to see if they are X or O.
 2. **Gameplay:** Players take turns placing their marks (X or O) on a 3x3 grid.
@@ -25,9 +21,13 @@ Caesar Cipher is a simple encryption that uses ASCII values to move letters
 2. **Open Terminal:** Navigate to the project directory using the terminal.
 3. **Run the Game:** Execute the game script to start playing.
 
+## ${\color{blue}Features:}$  (Caesar Cipher)
+- **2+ Players:** This is the base code. You can use it to send secret messages. I haven't added into a player mode with user input...YET!
+
 ${\color{blue}OS:}$ 
 for Mac
 
+${\color{blue}OS:}$ 
 for Windows
 ```
 python3 tic_tac_toe.py
